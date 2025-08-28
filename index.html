@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siva Sai Durga | Portfolio</title>
+  <style>
+    :root {
+      --bg-light: #f5f5f5;
+      --bg-dark: #121212;
+      --text-light: #121212;
+      --text-dark: #f5f5f5;
+      --accent: #4CAF50;
+      --card-light: #ffffff;
+      --card-dark: #1e1e1e;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-light);
+      color: var(--text-light);
+      transition: background 0.3s, color 0.3s;
+    }
+
+    body.dark {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    header {
+      padding: 1.5rem;
+      text-align: center;
+      background: var(--accent);
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .section {
+      background: var(--card-light);
+      margin-bottom: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: background 0.3s;
+    }
+
+    body.dark .section {
+      background: var(--card-dark);
+      box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    }
+
+    h2 {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin: 0.4rem 0;
+    }
+
+    .theme-toggle {
+      position: fixed;
+      top: 15px;
+      right: 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .theme-toggle:hover {
+      background: #45a049;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--accent);
+      color: white;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    G. Siva Sai Durga
+  </header>
+  
+  <button class="theme-toggle" onclick="toggleTheme()">🌙 Dark Mode</button>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:gundradevi7@gmail.com">gundradevi7@gmail.com</a></p>
+      <p>Phone: +91 9347791232</p>
+      <p>DOB: 15/06/2006</p>
+    </div>
+
+    <div class="section">
+      <h2>Professional Profile</h2>
+      <p>I am a hardworking and flexible person with good problem-solving skills and a strong interest in technology. I learn quickly, work well with others, and always try to give my best results while improving my skills.</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li><b>Programming:</b> C (Basics), Java (Basics), Python (Intermediate)</li>
+        <li><b>Technologies:</b> Power BI, HTML, CSS, SQL</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><b>B.Sc Artificial Intelligence</b>, Aditya Degree College (2023-26) – CGPA: 9.1</li>
+        <li><b>Intermediate (MPC)</b>, Sri Nidhi Junior College (2022-23) – 93%</li>
+        <li><b>SSC</b>, Z.P. High School, Durgada (2021) – 87%</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <p><b>Facial Detection System using Python:</b> Built a real-time face detection program using Python that captures video via webcam and highlights detected faces.</p>
+    </div>
+
+    <div class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Mepro Pearson</li>
+        <li>EDX – Business Writing Techniques</li>
+        <li>Python for Everybody</li>
+        <li>Cisco – Programming Essentials in C</li>
+        <li>Python for Data Science</li>
+        <li>Web Development Foundation</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Internship</h2>
+      <p><b>Power BI Internship:</b> Learned to design interactive dashboards and reports, gained practical knowledge of data visualization and basic data analysis.</p>
+    </div>
+
+    <div class="section">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://linkedin.com/in/gundra-sivasaidurga" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/deedydas" target="_blank">GitHub</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 G. Siva Sai Durga | Portfolio
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+      const btn = document.querySelector(".theme-toggle");
+      if(document.body.classList.contains("dark")){
+        btn.textContent = "☀️ Light Mode";
+      } else {
+        btn.textContent = "🌙 Dark Mode";
+      }
+    }
+  </script>
+</body>
+</html>
